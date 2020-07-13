@@ -1,0 +1,308 @@
+/* General style */
+:root {
+    --primary-border: #20e6b9;
+    /* answer1 */
+    --first-success: #69edac;
+    --second-success: #50ccc8;
+    --first-information: #ade5ff;
+    --second-information: #71b5ed;
+    --first-buy-now: #b0bfff;
+    --second-buy-now: #ae8af1;
+    --first-warning: #ffd699;
+    --second-warning: #fca160;
+    --first-contact: #fec2ae;
+    --second-contact: #ed7574;
+    --first-delete: #ffabb8;
+    --second-delete: #f5849b;
+    /* answer2 */
+    --first-text: #ffe07e;
+    --second-text: #ff12a6;
+    /* answer3 */
+    --color-name: #919ba6;
+    --color-puuple: #A24BF0;
+    --color-neon-teal: #38DBB2;
+    --color-sky-blue: #25C2E3;
+    --color-red: #EA344F;
+    --color-pink: #DD44A7;
+    --color-yellow: #F7AC2A;
+    --color-black: #000000;
+    --color-assphalt: #555555;
+    --color-dirt: #888888;
+    --color-camel-skin: #D2D2D2;
+    --color-dirty-snow: #E8E8E8;
+    --color-what: #FCFCFC;
+
+    /* Example
+    /* --primary-color: #ff7870; */
+
+    /* var(--primary-color); */
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding: 5rem 5rem;
+}
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.872rem;
+    font-weight: 700;
+}
+h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+h5 {
+    font-size: 1.328rem;
+    font-weight: 700;
+}
+h6 {
+    font-size: 1.072rem;
+    font-weight: 700;
+}
+img {
+    display: block;
+}
+
+/* End */
+
+/* Header */
+header {
+    font-weight: 700;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+header h1 {
+    display: inline-block;
+    border-bottom: 1px grey solid;
+    margin: 0.5rem;
+}
+/* end */
+
+/* Question */
+.question {
+    text-align: justify;
+    font-weight: 700;
+
+    padding: 0.5rem;
+    margin: 2rem 0;
+
+    border: 2px solid var(--primary-border);
+    border-radius: 1rem;
+}
+/* End */
+
+/* Answer 1 */
+.answer1 {
+    width: 100%;
+    padding: 1rem;
+    margin: 5rem;
+}
+.answer1__list {
+    width: 100%;
+    padding: 0 12rem;
+
+    text-align: center;
+
+    margin-bottom: -7.1rem;
+}
+.answer1__item {
+    width: 30%;
+    height: auto;
+
+    display: inline-block;
+
+    margin-bottom: 7.1rem;
+}
+.answer1__button {
+    width: 18.9rem;
+    height: 4.8rem;
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0.5rem;
+}
+.answer1__button--success {
+    background-image: linear-gradient(to right, var(--first-success), var(--second-success));
+    box-shadow: 15px 15px 45px -15px var(--second-success);
+}
+.answer1__button--information {
+    background-image: linear-gradient(to right, var(--first-information), var(--second-information));
+    box-shadow: 15px 15px 45px -15px var(--second-information);
+}
+.answer1__button--buy-now {
+    background-image: linear-gradient(to right, var(--first-buy-now), var(--second-buy-now));
+    box-shadow: 15px 15px 45px -15px var(--second-buy-now);
+}
+.answer1__button--warning {
+    background-image: linear-gradient(to right, var(--first-warning), var(--second-warning));
+    box-shadow: 15px 15px 45px -15px var(--second-warning);
+}
+.answer1__button--contact {
+    background-image: linear-gradient(to right, var(--first-contact), var(--second-contact));
+    box-shadow: 15px 15px 45px -15px var(--second-contact);
+}
+.answer1__button--delete {
+    background-image: linear-gradient(to right, var(--first-delete), var(--second-delete));
+    box-shadow: 15px 15px 45px -15px var(--second-delete);
+}
+/* END */
+
+/* Answer 2 */
+.answer2 {
+    width: 100%;
+    padding: 1rem;
+    margin: 5rem 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: 600;
+    font-size: 20rem;
+
+    color: var(--first-text);
+}
+
+@supports (-webkit-background-clip: text) {
+    .answer2 {
+        background-image: linear-gradient(135deg, var(--first-text), var(--second-text));
+        /* background-image: linear-gradient(to right bottom, var(--first-text), var(--second-text)); */
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+/* END */
+
+/* Answer 3 */
+.answer3 {
+    width: 100%;
+    padding: 0 3.6rem;
+    margin: 5rem 0;
+}
+.answer3__title {
+    padding-bottom: 5rem;
+}
+.answer3__title > span {
+    font-size: inherit;
+    font-weight: inherit;
+}
+.answer3__item {
+    width: 15rem;
+    display: inline-block;
+
+    margin-bottom: 5rem;
+}
+.answer3__color {
+    width: 100%;
+    height: 17rem;
+
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+
+    transition: background-color 0.5s ease-in-out;
+}
+.answer3__code {
+    font-weight: 600;
+
+    padding: 1rem 0;
+}
+.answer3__name {
+    font-size: 1.4rem;
+
+    color: var(--color-name);
+}
+.answer3__list li:not(:last-child) {
+    margin-right: 5rem;
+}
+/*  */
+.answer3__list-first li:first-child > .answer3__color {
+    background-color: var(--color-puuple);
+}
+.answer3__list-first li:nth-child(2) > .answer3__color {
+    background-color: var(--color-neon-teal);
+}
+.answer3__list-first li:nth-child(3) > .answer3__color {
+    background-color: var(--color-sky-blue);
+}
+.answer3__list-first li:nth-last-child(3) > .answer3__color {
+    background-color: var(--color-red);
+}
+.answer3__list-first li:nth-last-child(2) > .answer3__color {
+    background-color: var(--color-pink);
+}
+.answer3__list-first li:last-child > .answer3__color {
+    background-color: var(--color-yellow);
+}
+/*  */
+.answer3__list-second li:first-child > .answer3__color {
+    background-color: var(--color-black);
+}
+.answer3__list-second li:nth-child(2) > .answer3__color {
+    background-color: var(--color-assphalt);
+}
+.answer3__list-second li:nth-child(3) > .answer3__color {
+    background-color: var(--color-dirt);
+}
+.answer3__list-second li:nth-last-child(3) > .answer3__color {
+    background-color: var(--color-camel-skin);
+}
+.answer3__list-second li:nth-last-child(2) > .answer3__color {
+    background-color: var(--color-dirty-snow);
+}
+.answer3__list-second li:last-child > .answer3__color {
+    background-color: var(--color-what);
+}
+/* End */
+
+/* Answer4 */
+.answer3__color:hover {
+    background-color: orangered !important;
+}
+/* End */
+
+/* Answer 5 */
+div[data-link^='https'] {
+    color: red;
+}
+div[data-link$='vn'] {
+    color: green;
+}
+div[data-name*='hello'] {
+    color: blue;
+}
+input[type="email"] {
+    border: solid 2px var(--color-pink);
+}
+input[name="fullname"] {
+    border: solid 2px var(--color-yellow);
+}
+/* End */
+
+/* Footer */
+footer {
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+/* End */
